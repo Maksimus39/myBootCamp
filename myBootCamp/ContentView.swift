@@ -10,7 +10,7 @@ struct ContentView: View {
             .kerning(10)
             .foregroundColor(Color("Color1"))
             .frame(width: 300, height: 200, alignment: .center)
-            .minimumScaleFactor(0.4)
+            .minimumScaleFactor(0.5)
             .textSelection(.enabled)
     }
 }
