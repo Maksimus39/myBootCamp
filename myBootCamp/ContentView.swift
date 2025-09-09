@@ -3,15 +3,31 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        Text("Мой первый текст в SwiftUI, и я рад что дошёл до этого раздела!")
-            .font(.largeTitle)
-            .bold()
-            .multilineTextAlignment(.leading)
-            .kerning(10)
-            .foregroundColor(Color("Color1"))
-            .frame(width: 300, height: 200, alignment: .center)
-            .minimumScaleFactor(0.5)
-            .textSelection(.enabled)
+        // task 1
+        
+//        Text("Добрый день")
+//            .font(.largeTitle)
+        
+        
+        // task 2
+        
+//        Text("Добрый день")
+//            .bold()
+//            .underline()
+        
+        
+        // task 3
+        
+//        Text("Добрый день")
+//            .strikethrough(color: .red)
+        
+        
+        // task 4
+        
+//        Text("Во время бега взгляд безумный, поэтому меня называют чугунным")
+//            .font(.largeTitle)
+//            .padding()
+//            .foregroundColor(.blue)
     }
 }
 
