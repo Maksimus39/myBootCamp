@@ -2,16 +2,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        Text("Мой первый текст в SwiftUI, и я рад что дошёл до этого раздела!")
-            .font(.largeTitle)
-            .bold()
-            .multilineTextAlignment(.leading)
-            .kerning(10)
-            .foregroundColor(Color("Color1"))
-            .frame(width: 300, height: 200, alignment: .center)
-            .minimumScaleFactor(0.4)
-            .textSelection(.enabled)
+        Image("images1")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 200, height: 200)
+            .cornerRadius(200)
+        Image("images2")
+            .resizable()
+            .scaledToFill()
+            .frame(width: 300, height: 300)
+            .cornerRadius(100)
+        Image("images2")
+            .clipShape(Circle())
+            
     }
 }
 
