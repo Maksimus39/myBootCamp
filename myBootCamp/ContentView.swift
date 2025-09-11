@@ -3,15 +3,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        Text("Мой первый текст в SwiftUI, и я рад что дошёл до этого раздела!")
-            .font(.largeTitle)
-            .bold()
-            .multilineTextAlignment(.leading)
-            .kerning(10)
-            .foregroundColor(Color("Color1"))
-            .frame(width: 300, height: 200, alignment: .center)
-            .minimumScaleFactor(0.4)
-            .textSelection(.enabled)
+        Image(systemName: "house.fill")
+            .resizable()
+            .font(.system(size: 100))
+            .frame(width: 300, height: 300)
+            .foregroundColor(.purple)
+            
     }
 }
 
