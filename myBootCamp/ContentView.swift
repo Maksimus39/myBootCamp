@@ -3,25 +3,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        Spacer()
+       // task 1
         
-        VStack(spacing:0){
-            Spacer()
-            RoundedRectangle(cornerRadius: 25)
-            Spacer()
-            RoundedRectangle(cornerRadius: 25)
-            Spacer()
+        VStack (spacing:50){
+            Circle().fill(.red)
+            Circle().fill(.yellow)
+            Circle().fill(.green)
         }
-        
-        VStack(spacing:0){
-            Spacer()
-            RoundedRectangle(cornerRadius: 25)
-            Spacer()
-            RoundedRectangle(cornerRadius: 25)
-            Spacer()
-        }
-        
-        Spacer()
     }
 }
 
