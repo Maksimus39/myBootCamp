@@ -2,32 +2,32 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var text: String = ""
-    @State private var name = ""
-    
+    @State  var text1: String = ""
+    @State  var text2: String = ""
+    @State  var name: String = ""
+    @State  var surname: String = ""
     
     var body: some View {
-        VStack{
-            TextField("Введите ваше имя", text: $text)
-            Text(text)
+        VStack {
+            Spacer()
+            if name != "" && surname != "" {
+                Text("Привет, \(name) \(surname)")
+            }
+            Spacer()
+            TextField("Введите ваше имя", text: $text1)
                 .textFieldStyle(.roundedBorder)
                 .padding()
-                .foregroundColor(.red)
+            Button("Enter", action:{
+                name = text1
+            })
+            TextField("Введите вашу фамилию", text: $text2)
+                .textFieldStyle(.roundedBorder)
+                .padding()
+            Button("Enter", action:{
+                surname = text2
+            })
         }
-        
-        Button(action: {
-            name = text
-        }, label: {
-            Text("Сохранить")
-                .font(.headline)
-                .padding()
-                .foregroundColor(.white)
-                .frame(maxWidth: .infinity)
-                .background(.green)
-                .cornerRadius(10)
-                .padding()
-               
-        })
+        .padding()
     }
 }
 
