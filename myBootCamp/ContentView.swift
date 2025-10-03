@@ -3,15 +3,44 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        Text("Мой первый текст в SwiftUI, и я рад что дошёл до этого раздела!")
-            .font(.largeTitle)
-            .bold()
-            .multilineTextAlignment(.leading)
-            .kerning(10)
-            .foregroundColor(Color("Color1"))
-            .frame(width: 300, height: 200, alignment: .center)
-            .minimumScaleFactor(0.4)
-            .textSelection(.enabled)
+        ScrollView (.horizontal, showsIndicators: false) {
+            HStack {
+                Image(systemName: "trash.fill")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    .frame(width: 300, height: 300)
+                    .background(.red)
+                    .cornerRadius(25)
+                
+                Image(systemName: "document.on.trash.fill")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    .frame(width: 300, height: 300)
+                    .background(.yellow)
+                    .cornerRadius(25)
+                
+                Image(systemName: "trash.square")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    .frame(width: 300, height: 300)
+                    .background(.green)
+                    .cornerRadius(25)
+                
+                Image(systemName: "trash.circle.fill")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    .frame(width: 300, height: 300)
+                    .background(.purple)
+                    .cornerRadius(25)
+                
+                Image(systemName: "figure.walk.diamond")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+                    .frame(width: 300, height: 300)
+                    .background(.blue)
+                    .cornerRadius(25)
+            }
+        }
     }
 }
 
